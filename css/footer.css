@@ -1,22 +1,121 @@
+
+/* Mobile */
+
 .footer {
-  background-color: #2e2f42; 
-  padding: 100px 0;
+  background-color: #2e2f42;
+  padding: 96px 0;
 }
 
 .footer .container {
   display: flex;
-  align-items: baseline;
-  
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-info {
   max-width: 264px;
-  margin-right: 120px;
+  margin-right: 0;
+  text-align: center;
 }
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-subscribe {
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-form-field {
+  display: block;
+  width: 100%;
+}
+
+.footer-form-input {
+  width: 100%;
+  max-width: 398px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+  .footer .container {
+    max-width: 584px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+
+  .footer-info {
+    text-align: left;
+  }
+
+  .footer-social {
+    text-align: left;
+  }
+
+  .footer-subscribe {
+    width: auto;
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-form-field {
+    width: 264px;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .footer-info {
+    margin-right: 120px;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
+  }
+}
+
+/* Footer content */
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-logo .logo-icon-footer {
+  color: #f4f4fd;
 }
 
 .footer-text {
@@ -26,128 +125,94 @@
   letter-spacing: 0.02em;
 }
 
-.logo-icon-footer {
-  color: #f4f4fd;
-}
-.footer-social-title {
+.footer-social-title,
+.footer-subscribe-text {
   margin-bottom: 16px;
   color: #ffffff;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .footer-social-list {
   display: flex;
   gap: 16px;
 }
+
 .footer-social-item {
   width: 40px;
   height: 40px;
 }
+
 .footer-social-link {
-  color: #f4f4fd;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  color: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
 
-.footer-social-icon {
+.footer-social-link svg {
   fill: currentColor;
 }
 
-/* Footer form styles */
-.footer-form {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+/* Subscribe */
 
 .footer-form-input {
- width: 264px;
- height: 40px;
+  height: 40px;
   padding-left: 16px;
   border: 1px solid #ffffff;
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.footer-form-input:focus {
-  border-color: #31d0aa;
 }
 
 .footer-form-input::placeholder {
   color: #ffffff;
 }
 
-.btn {
-
+.footer-form-input:focus {
+  outline: none;
+  border-color: #31d0aa;
 }
 
-.btn-filled {
+.footer .btn-filled {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   min-width: 165px;
   height: 40px;
-  background-color: #4d5ae5;
-  color: #fff;
-  border: none;
   padding: 8px 24px;
+  border: none;
   border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.btn-filled:hover,
-.btn-filled:focus {
-  background-color: #31d0aa;
+.footer .btn-filled:hover,
+.footer .btn-filled:focus {
+  background-color: #404bbf;
 }
-
 
 .footer-form-icon {
   fill: #ffffff;
-}
-
-.footer-subscribe {
-  margin-left: auto;
-}
-
-.footer-subscribe-text {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-.footer-form-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
 }

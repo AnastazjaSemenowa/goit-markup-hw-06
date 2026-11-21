@@ -35,6 +35,12 @@ button {
 address{
   font-style: normal;
 }
+/* Helper class */
+.hide {
+  display: none !important;
+}
+
+
 
 
 /* Base styles */
@@ -44,11 +50,19 @@ img {
   height: auto;
 }
 
+
 .section {
- padding-top: 120px;
- padding-bottom: 120px;
- 
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
+
+@media only screen and (min-width: 1158px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
 .team .section-title {
   max-width: 412px;
   margin: 0 auto 72px;
@@ -92,15 +106,27 @@ color: #2e2f42;
   margin: -1px;
 }
 
+
 .container {
-  max-width: 1158px;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
+
 
 .visually-hidden {
   position: absolute;
