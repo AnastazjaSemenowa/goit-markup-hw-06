@@ -88,6 +88,7 @@ line-height: 1.33333;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+padding: 16px 0;
 }
 .logo-icon {
 color: #2e2f42;
@@ -109,7 +110,7 @@ color: #2e2f42;
 
 .container {
     width: 100%;
-    max-width: 375px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 16px;
 }

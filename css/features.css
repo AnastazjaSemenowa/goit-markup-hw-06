@@ -36,6 +36,8 @@
   color: #434455;
 }
 
+
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .features-list {
@@ -81,6 +83,7 @@
   .features-subtitle {
     font-size: 20px;
     line-height: 1.2;
+    font-weight: 500;
   }
 
   .features-desc {
