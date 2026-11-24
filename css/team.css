@@ -2,7 +2,6 @@
 /* Mobile */
 .team {
     background-color: #f4f4fd;
-    padding: 96px 0;
 }
 
 .team-list {
@@ -35,10 +34,7 @@
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
-    .team {
-        padding: 120px 0;
-    }
-
+    
     .team-list {
         justify-content: space-between;
         gap: 24px;
