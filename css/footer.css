@@ -16,7 +16,7 @@
 .footer-info {
   max-width: 264px;
   margin-right: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-social {
@@ -43,7 +43,6 @@
 
 .footer-form-input {
   width: 100%;
-  max-width: 398px;
 }
 
 /* Tablet */
@@ -123,6 +122,7 @@
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .footer-social-title,
